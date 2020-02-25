@@ -1,0 +1,12 @@
+<div class=success><%= h(flash[:success]) %></div>
+<div class=good><%= h(flash[:good]) %></div>
+
+<h4>Title</h4>
+<p><%= @book.title %></p>
+<h4>Body</h4>
+<p><%= @book.body %></p>
+
+
+ <%= link_to "edit", edit_book_path(@book.id) %>
+ <a>|</a>
+ <%= link_to "back", books_path %>
